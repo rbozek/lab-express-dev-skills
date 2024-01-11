@@ -1,8 +1,9 @@
 next git push:
 
-add skills link to views/index, build controllers folder & skills.js, re-factor routes, re-factor server
+
 
 
  what does "update imports" in vs code actually change?
  questions - how to test along the way if nodemon crash?
  making folders mouse vs. terminal?
+ GUI copy whole git project for safety?

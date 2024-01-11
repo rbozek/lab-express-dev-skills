@@ -1,3 +1,6 @@
+// config for mongoDB
+import "dotenv/config.js"
+
 // import npm packages
 import express from 'express'
 import path from 'path'

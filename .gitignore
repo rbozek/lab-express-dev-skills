@@ -1,6 +1,8 @@
 next git push:
 
-update title in index router, add skills route, refactor all todos routs to skills, re-factor skills views index
+add skills link to views/index, build controllers folder & skills.js, re-factor routes, re-factor server
 
 
+ what does "update imports" in vs code actually change?
  questions - how to test along the way if nodemon crash?
+ making folders mouse vs. terminal?

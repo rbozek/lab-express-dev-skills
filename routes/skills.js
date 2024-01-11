@@ -1,6 +1,8 @@
 import { Router } from 'express'
-// import the Todo data
-import { skills } from '../data/skills-data.js'
+// import the Todo data - now moved to CONTROLLER 
+// import { skills } from '../data/skills-data.js'
+
+import * as skillsCtrl from '../controllers/skills.js'
 
 const router = Router()
 
@@ -10,10 +12,6 @@ const router = Router()
 // })
 
 // GET localhost:3000/skills
-router.get('/', function(req, res) {
-  res.render('skills/index', {
-    skills: skills
-  })
-})
+router.get('/', skillsCtrl.index)
 
 export { router }

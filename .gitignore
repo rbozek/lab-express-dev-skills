@@ -1,6 +1,6 @@
 next git push:
 
-
+create config folder & database.js file, import database to config and server, add event listeners.
 
 
  what does "update imports" in vs code actually change?

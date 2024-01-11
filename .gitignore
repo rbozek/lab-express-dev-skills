@@ -1,10 +1,8 @@
 next git push:
 
-define new skill route in server (in routes/skills). code & export controller action.
-
+ Render the View & Write
 
   MISC QUESTIONS!
 what does "update imports" in vs code actually change?
 questions - how to test along the way if nodemon crash?
 making folders mouse vs. terminal?
-GUI copy whole git project for safety?

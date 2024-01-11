@@ -6,14 +6,18 @@
  <title>Very Important Skillz</title>
 </head>
 <body>
- <h1>Todos</h1>
+ <h1>Skills</h1>
  <ul>
-   <% todos.forEach(todo => { %>
-     <li>
-   <%= todo.text %> 
+   <% skills.forEach(skill => { %>
+   <li>
+   <%= skill.text %> 
    - 
-   <%= todo.done ? 'done' : 'not done' %>
-  </li>
+   <%= skill.loud ? 'loud as hell' : 'nice n quiet' %>
+   - 
+   <%= skill.impressive ? 'impressive, dawg' : 'not impressed' %>
+   - id#: 
+   <%= skill._id %>
+   </li>
    <% }) %>
  </ul>
 </body>

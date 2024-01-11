@@ -1,9 +1,10 @@
 next git push:
 
-create config folder & database.js file, import database to config and server, add event listeners.
+create models directory & js file. define basic schema for skill. compile schema into model.
 
 
- what does "update imports" in vs code actually change?
- questions - how to test along the way if nodemon crash?
- making folders mouse vs. terminal?
- GUI copy whole git project for safety?
+  MISC QUESTIONS!
+what does "update imports" in vs code actually change?
+questions - how to test along the way if nodemon crash?
+making folders mouse vs. terminal?
+GUI copy whole git project for safety?

@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Lab Part 4 adding linking stylesheet -->
+  <link rel="stylesheet" href="/stylesheets/style.css">
   <title>Very Important Skillz</title>
 </head>
 <body>
@@ -10,6 +12,13 @@
   <ul>
     <% skills.forEach(skill => { %>
     <li>
+      <form 
+        action="/skills/<%= skill._id %>?_method=DELETE"
+        class="delete-form"
+        method="POST"
+      >
+        <button type="submit">X</button>
+      </form>
     <a href="/skills/<%= skill._id %>"><%= skill.text %></a>
     - 
     <%= skill.done ? 'done' : 'not done' %>

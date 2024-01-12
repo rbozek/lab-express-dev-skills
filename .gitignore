@@ -1,6 +1,6 @@
 next git push:
 
-method-override - install from npm, import to server, add to middleware
+functionality to delete skills - determine route, create UI, basic styling, define route on server, code & export controller action
 
 
 

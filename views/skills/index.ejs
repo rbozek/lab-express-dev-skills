@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Very Important Skillz</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Very Important Skillz</title>
 </head>
 <body>
- <h1>Skills</h1>
- <ul>
-   <% skills.forEach(skill => { %>
-   <li>
-   <%= skill.text %> 
-   - 
-   <%= skill.loud ? 'loud as hell' : 'nice n quiet' %>
-   - 
-   <%= skill.impressive ? 'impressive, dawg' : 'not impressed' %>
-   - id#: 
-   <%= skill._id %>
-   </li>
-   <% }) %>
- </ul>
- <a href="/skills/new">Add Skill</a>
+  <h1>Skills</h1>
+  <ul>
+    <% skills.forEach(skill => { %>
+    <li>
+    <a href="/skills/<%= skill._id %>"><%= skill.text %></a>
+    - 
+    <%= skill.done ? 'done' : 'not done' %>
+    -
+    <%= skill.loud ? 'loud as hell' : 'nice n quiet' %>
+    - 
+    <%= skill.impressive ? 'impressive, dawg' : 'not impressed' %>
+    - id#: 
+    <%= skill._id %>
+    </li>
+    <% }) %>
+  </ul>
+  <a href="/skills/new">Add Skill</a>
 </body>
 </html>

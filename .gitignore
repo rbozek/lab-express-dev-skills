@@ -1,7 +1,6 @@
 next git push:
 
-creating new skill: define route, code & export controller action, no need to render view, already set up
-
+add paths to skills - identify route, create UI, definte route, code & export controller
 
 got to:
 # Implementing the second-request functionality - tried next few steps and stuff broke!

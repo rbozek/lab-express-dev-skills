@@ -21,6 +21,20 @@ function newSkill(req, res) {
   res.render('skills/new')
 }
 
+
+function show(req, res) {
+  Skill.findById(req.params.skillId)
+  .then(skill => {
+    res.render('skills/show', {
+      skill: skill
+    })
+  })
+  .catch(error => {
+    console.log(error)
+    res.redirect('/skills')
+  })
+}
+
 function create(req, res) {
   // console.log('TESTING')
   // console.log(req.body)
@@ -39,5 +53,6 @@ function create(req, res) {
 export {
 index,
 newSkill as new,
+show,
 create
 }

@@ -14,6 +14,7 @@ const router = Router()
 // GET localhost:3000/skills
 router.get('/', skillsCtrl.index)
 router.get('/new', skillsCtrl.new)
+router.get('/:skillId', skillsCtrl.show) // added in Part 3
 router.post('/', skillsCtrl.create)
 
 export { router }

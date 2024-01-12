@@ -1,8 +1,14 @@
 next git push:
 
- Render the View & Write
+creating new skill: define route, code & export controller action, no need to render view, already set up
+
+
+got to:
+# Implementing the second-request functionality - tried next few steps and stuff broke!
 
   MISC QUESTIONS!
+-in routes/skills.js - export router - which part is exporting? ONLY top thing? or also router.app?
+
 what does "update imports" in vs code actually change?
 questions - how to test along the way if nodemon crash?
 making folders mouse vs. terminal?

@@ -1,3 +1,5 @@
+//can delete once we're hooked up to MongoDB server! no more need for local data.
+
 const skills = [
  {text: 'Burp on command', impressive: true, loud: true, _id: 100001},
  {text: 'Speed reading', impressive: true, loud: false, _id: 100002},

@@ -1,9 +1,8 @@
 next git push:
 
-add paths to skills - identify route, create UI, definte route, code & export controller
+add 'do nothing' middleware to server & add time, add req.time to skills controller, render time in skills views index
 
-got to:
-# Implementing the second-request functionality - tried next few steps and stuff broke!
+
 
   MISC QUESTIONS!
 -in routes/skills.js - export router - which part is exporting? ONLY top thing? or also router.app?

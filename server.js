@@ -7,6 +7,7 @@ import path from 'path'
 import { fileURLToPath } from 'url'
 import createError from 'http-errors'
 import logger from 'morgan'
+import methodOverride from 'method-override'  // Lab Part 4
 // connect to the database with Mongoose
 import './config/database.js'
 
@@ -19,8 +20,8 @@ const app = express()
 
 // view engine setup
 app.set('view engine', 'ejs')
-	
-// add 'do nothing' middleware
+
+// my added middleware from Lab Part 4
 app.use(function(req, res, next) {
   console.log('Hello bonehead!')
   req.time = new Date().toLocaleTimeString()
@@ -36,6 +37,7 @@ app.use(
     path.join(path.dirname(fileURLToPath(import.meta.url)), 'public')
   )
 )
+app.use(methodOverride('_method'))  // Lab Part 4, using imported methodOverride we installed from npm
 
 // mount imported routes
 app.use('/', indexRouter)

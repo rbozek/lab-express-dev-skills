@@ -1,6 +1,6 @@
 next git push:
 
-add 'do nothing' middleware to server & add time, add req.time to skills controller, render time in skills views index
+method-override - install from npm, import to server, add to middleware
 
 
 
